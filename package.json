@@ -1,0 +1,45 @@
+{
+  "private": true,
+  "name": "wp-tema-padrao",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.5",
+    "axios": "^0.21",
+    "browser-sync": "^2.26.14",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "laravel-mix": "^6.0.6",
+    "lodash": "^4.17.19",
+    "postcss": "^8.2.1",
+    "postcss-import": "^12.0.1",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.8",
+    "sass-loader": "^8.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agencia-S3-dev/wp-tema-padrao.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Agencia-S3-dev/wp-tema-padrao/issues"
+  },
+  "homepage": "https://github.com/Agencia-S3-dev/wp-tema-padrao#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@popperjs/core": "^2.10.2",
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.4",
+    "jquery-mask-plugin": "^1.14.16",
+    "slick-carousel": "^1.8.1"
+  }
+}

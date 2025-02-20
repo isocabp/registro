@@ -1,0 +1,138 @@
+* {
+  font-family: "Montserrat";
+}
+
+// atualizar com classe do nitronews
+.ENMMyuQjc3kmZZjTjjNQc5MG31jJOUN  {
+  height: 0;
+  overflow: hidden;
+}
+
+.img {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.img-100 {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@function calculateRem($size) {
+  @return calc($size / 16px) * 1rem;
+}
+
+h1 {
+  font-size: clamp(calculateRem(35px), 6vw, calculateRem(40px));
+}
+
+//h2 {}
+
+//h3 {}
+
+//h4 {}
+
+//h5 {}
+
+//h6 {}
+
+// small{}
+
+p {
+  word-wrap: break-word;
+  font-size: clamp(calculateRem(14px), 6vw, calculateRem(16px));
+}
+
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.btn-circle {
+  width: 40px;
+  height: 40px;
+  padding: 0 !important;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+
+  i {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// margins
+@mixin offset-margin($margin, $value) {
+  margin-#{$margin}: $value;
+}
+
+@for $i from 1 through 200 {
+  @each $margin in top, left, bottom, right {
+    .margin-#{$margin}-#{$i} {
+      @include offset-margin($margin, 1px * $i);
+    }
+  }
+}
+
+//padding
+@mixin offset-margin($padding, $value) {
+  padding-#{$padding}: $value;
+}
+
+@for $i from 1 through 200 {
+  @each $padding in top, left, bottom, right {
+    .padding-#{$padding}-#{$i} {
+      @include offset-margin($padding, 1px * $i);
+    }
+  }
+}
+
+//line-clamps
+@for $i from 1 through 8 {
+  .line-clamp-#{$i} {
+    display: -webkit-box;
+    -webkit-line-clamp: #{$i};
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: #{$i};
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}
+
+// font size
+@for $i from 10 through 40 {
+  .font-#{$i} {
+    font-size: #{$i}px;
+
+    > * {
+      font-size: #{$i}px;
+    }
+  }
+}
+
+// font size
+@for $i from 1 through 20 {
+  .z-index-#{$i} {
+    z-index: #{$i};
+
+    > * {
+      z-index: #{$i};
+    }
+  }
+}

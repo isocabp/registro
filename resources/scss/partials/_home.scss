@@ -1,0 +1,199 @@
+#login{
+    .container-fluid{
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .login_left {
+        background: $primary;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media (min-width: 768px) {
+        .login__left-wrap {
+            height: 100vh;
+        }
+    }
+    @media (min-width: 768px) {
+        .intro {
+            padding-top: 185px;
+        }
+    }
+    .login_right {
+        background: #FFFFFF;
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 80px;
+        }
+    }
+    .login_login {
+        font-weight: 500;
+        font-size: 30px;
+        color: #353535;
+    }
+    .login_register {
+        font-size: 30px;
+        color: #8F9AA3;
+        text-decoration: none;
+        margin-bottom: 40px;
+        font-weight: 100;
+    }
+    .form-group {
+        margin-top: 12px;
+        span{
+            font-size: 12px;
+            color: #5f5e5e;
+        }
+    }
+    .label-acesso{
+        font-size: 12px;
+        color: #5f5e5e;
+    }
+    .seguranca{
+        width: 110px;
+    }
+    .copyright_label {
+       p{
+        color: #808080;
+        font-size: 9px;
+        line-height: 1.5;
+       }
+    }
+    .login_input {
+        background: transparent;
+        border: none;
+        border-color: #808080 !important;
+        border-bottom: 1px solid #000000;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-radius: 0;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    .form-control {
+        display: block;
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: $white !important;
+        background-clip: padding-box;
+        border: 1px solid #ced4da !important;
+        border-radius: 0;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        &:focus {
+            background-color: #e9ecef !important; // muda a cor ao focar
+            border-top: none !important;
+            border-right: none !important;
+            border-left: none !important;
+        }
+    }
+    .line_17 {
+        line-height: 17px;
+    }
+    .img-call{
+        width: 190px;
+        @include media-breakpoint-down(lg) {
+            width: 150px;
+        }
+    }
+    .resend {
+        color: #5B87Da !important;
+        text-decoration: none !important;
+    }
+    .btnLogin_cancel {
+        background-color: #FFF !important;
+        border-color: #FFF !important;
+        border: #FFF;
+        color: #8F9AA3 !important;
+    }
+    .btnLogin {
+        /* margin-top: 2%; */
+        background-color: #5B87Da;
+        border: 1px solid #5B87Da;
+        color: #FFF;
+        /* background-color: transparent; */
+        height: 38px;
+        line-height: 38px;
+        min-width: 130px;
+        /* padding: 0 20px; */
+        margin-left: 0;
+        -webkit-transition: all .150s ease;
+        -o-transition: all .150s ease;
+        transition: all .150s ease;
+        border: 1px solid #5B87Da;
+        border-radius: 21px;
+        /* color: #5B87Da; */
+        font-size: 12px;
+        text-align: center;
+        font-weight: 500;
+        vertical-align: top;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    h2{
+        color: $white;
+        font-weight: 600;
+        padding-top: 5px;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    p{
+        color: $white;
+        font-size: 16px;
+    }
+    .link-uteis{
+        color: $white;
+        margin: 0;
+        display: block;
+        line-height: 1.1;
+        font-weight: 700;
+        font-size: 12px;
+    }
+    .logo{
+        width: 450px;
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+        }
+    }
+    .big-links__utils {
+        padding-left: 10px;
+        list-style: none;
+    
+        @include media-breakpoint-down(lg) {
+            padding-right: 0;
+        }
+        li {
+            display: inline-block;
+            position: relative;
+        }
+    
+        a {
+            color: white !important;
+            padding-right: 15px;
+            position: relative;
+            font-size: 11px;
+    
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 1px;
+                height: 70%;
+                transform: translate(-3px, -50%);
+                background-color: white;
+            }
+        }
+    
+        /* remove o before de todos os <a> EXCETO o primeiro */
+        li:not(:first-child) a::before {
+            content: none;
+        }
+    }
+    
+}
