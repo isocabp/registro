@@ -25,11 +25,11 @@ include("header.php");
                   </p>
                 </div>
               </div>
-              <div class="big-links row mt-auto pt-5 pt-md-0 pb-3">
+              <div class="big-links row pt-5 pt-md-0 pb-3">
                 <div class="col-6 col-lg-5 col-xl-5">
                   <img class="img-call" src="assets/img/call.png" alt="">
                 </div>
-                <div class="col-6 col-lg-7 col-xl-7 col-xl-7-1">
+                <div class="col-6 col-lg-7 col-xl-7 col-xl-7-1 ">
                   <div class="row">
                     <p class="link-uteis">
                       LINKS ÚTEIS
